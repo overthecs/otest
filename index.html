@@ -107,7 +107,7 @@
 
             $('body').delegate('.unit a', 'click', function(e){
                 var text = $(this).text();
-                mixpanel.track(".unit a", "SiteLink", {
+                mixpanel.track("SiteLink", {
                     'text':text
                 });
             })
