@@ -105,9 +105,12 @@
 
             animateSpan();
 
-            mixpanel.track_links(".unit a", "SiteLink", {
-                'text':$(this).text()
-            });
+            $('body').delegate('.unit a', 'click', function(e){
+                var text = $(this).text();
+                mixpanel.track(".unit a", "SiteLink", {
+                    'text':text
+                });
+            })
         });
     </script>
     <script type="text/javascript" src="http://js.tongji.linezing.com/3274846/tongji.js"></script><noscript><a href="http://www.linezing.com"><img src="http://img.tongji.linezing.com/3274846/tongji.gif"/></a></noscript>
