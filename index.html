@@ -4,115 +4,64 @@
     <meta charset="UTF-8">
     <title>深夜福利</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <link rel="stylesheet" href="/static/style.packed.css" />
-    <script src="/static/jquery.js" type="text/javascript"></script>
-    <!-- start Mixpanel --><script type="text/javascript">(function(e,b){if(!b.__SV){var a,f,i,g;window.mixpanel=b;a=e.createElement("script");a.type="text/javascript";a.async=!0;a.src=("https:"===e.location.protocol?"https:":"http:")+'//cdn.mxpnl.com/libs/mixpanel-2.2.min.js';f=e.getElementsByTagName("script")[0];f.parentNode.insertBefore(a,f);b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.track_charge people.clear_charges people.delete_user".split(" ");for(g=0;g<i.length;g++)f(c,i[g]);b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);mixpanel.init("0f6abff9d6c4503520be364a85619665");</script><!-- end Mixpanel -->
+    <link rel="stylesheet" href="/static/style.css" />
     <link rel="shortcut icon" href="/favicon.png" type="image/x-icon">
 </head>
 <body>
-    <div class="wrapper">
-        <div class="logo">
-            <a href="/"><img src="/static/logo.png" alt="" width="250" height="52"/></a>
-            <h1 class="hide">深夜福利</h1>
-        </div>
-
-        <div class="tips">觉得好，请悄悄地告诉你的朋友</div>
-
-        <div class="nav-con">
-            <h2 class="on"><span>福利社</span></h2>
-            <h2><span>福利资源</span></h2>
-            <h2><span>同志福利</span></h2>
-            <h2><span>贴吧小组</span></h2>
-        </div>
-
-        <div class="active-border">
-            <span id="active-span">&nbsp;</span>
-        </div>
-
-        <div class="unit">
-            <div class="unit-content">
-                <a href="http://cl.cn.mu/" class="theme2" target="_blank">CaoLiu 1</a>
-                <a href="http://cl.man.lv/" class="theme7" target="_blank">CaoLiu 2</a>
-                <a href="http://184.154.128.246/" class="theme4" target="_blank">CaoLiu 3</a>
-                <a href="http://c7e56444.youfap.me" class="theme9" target="_blank">91-1</a>
-                <a href="http://91.vido.ws/" class="theme14" target="_blank">91-2</a>
-                <a href="http://c7e56444.picbucks.com" class="theme3" target="_blank">91-3</a>
-                <a href="/about" class="more" target="_blank">+ 等你推荐</a>
-            </div>
-            <div class="unit-content hide">
-                <a href="http://www.torrentmao.com/" class="theme17" target="_blank">磁力工厂</a>
-                <a href="http://so.baiduyun.me/" class="theme7" target="_blank">云盘搜索</a>
-                <a href="http://avgoogle.net/" class="theme8" target="_blank">AVGoogle</a>
-                <a href="http://txt.meiwenshe.com/" class="theme15" target="_blank">美文社</a>
-                <a href="/about" class="more" target="_blank">+ 等你推荐</a>
-            </div>
-            <div class="unit-content hide">
-                <a href="http://zwgay.com" class="theme13" target="_blank">中文同志</a>
-                <a href="/about" class="more" target="_blank">+ 等你推荐</a>
-            </div>
-            <div class="unit-content hide">
-                <a href="http://tieba.baidu.com/f?kw=%BC%D0%CD%C8" class="theme9" target="_blank">夹腿吧</a>
-                <a href="http://tieba.baidu.com/f?kw=%BD%E3%CD%D1" class="theme3" target="_blank">姐脱吧</a>
-                <a href="http://tieba.baidu.com/f?kw=bra" class="theme5" target="_blank">Bra吧</a>
-                <a href="http://tieba.baidu.com/f?kw=%E5%B2%B3%E6%AF%8D" class="theme14" target="_blank">岳母吧</a>
-                <a href="http://tieba.baidu.com/f?kw=%E5%BC%B1%E6%99%BA" class="theme12" target="_blank">弱智吧</a>
-                <a href="http://www.douban.com/group/haixiuzu/" class="theme6" target="_blank">害羞组</a>
-                <a href="/about" class="more" target="_blank">+ 等你推荐</a>
-            </div>
-        </div>
-
+  <div class="wrapper">
+    <div class="logo">
+      <a href="/"><img src="/static/logo.png" alt="" width="250" height="52"/></a>
+      <h1 class="hide">深夜福利</h1>
     </div>
 
-    <script type="text/javascript">
-        $(function(){
-            function animateSpan(span){
-                if(!span){
-                    span = $('.nav-con .on span')
-                }
+    <div class="tips">觉得好，请悄悄地告诉你的朋友</div>
 
-                var width = span.width() + 20;
-                var spanX = span.offset().left;
-                var conX = $('.nav-con').offset().left;
+    <div class="unit">
+      <h2 class="unit-title">福利社</h2>
+      <div class="unit-detail">
+        <a href="http://cl.cn.mu/" class="theme2" target="_blank">CaoLiu 1</a>
+        <a href="http://cl.man.lv/" class="theme7" target="_blank">CaoLiu 2</a>
+        <a href="http://184.154.128.246/" class="theme4" target="_blank">CaoLiu 3</a>
+        <a href="http://c7e56444.youfap.me" class="theme9" target="_blank">91-1</a>
+        <a href="http://91.vido.ws/" class="theme14" target="_blank">91-2</a>
+        <a href="http://c7e56444.picbucks.com" class="theme3" target="_blank">91-3</a>
+        <a href="http://zwgay.com" class="theme15" target="_blank">中文同志</a>
+        <a href="/about" class="more" target="_blank">+ 我来推荐</a>
+      </div>
+    </div>
 
-                $('#active-span')
-                    .stop()
-                    .animate({left:spanX-10,width:width},300);
-            }
+    <div class="unit">
+      <h2 class="unit-title">福利资源</h2>
+      <div class="unit-detail">
+        <a href="http://www.torrentmao.com/" class="theme17" target="_blank">磁力工厂</a>
+        <a href="http://so.baiduyun.me/" class="theme7" target="_blank">云盘搜索</a>
+        <a href="http://avgoogle.net/" class="theme8" target="_blank">AVGoogle</a>
+        <a href="http://txt.meiwenshe.com/" class="theme15" target="_blank">美文社</a>
+        <a href="/about" class="more" target="_blank">+ 我来推荐</a>
+      </div>
+    </div>
 
-            $('.nav-con h2').hover(function(){
-                var span = $($(this).find('span')[0]);
-                animateSpan(span);
+    <div class="unit">
+      <h2 class="unit-title">贴吧小组</h2>
+      <div class="unit-detail">
+        <a href="http://tieba.baidu.com/f?kw=%BC%D0%CD%C8" class="theme9" target="_blank">夹腿吧</a>
+        <a href="http://tieba.baidu.com/f?kw=%BD%E3%CD%D1" class="theme3" target="_blank">姐脱吧</a>
+        <a href="http://tieba.baidu.com/f?kw=bra" class="theme5" target="_blank">Bra吧</a>
+        <a href="http://tieba.baidu.com/f?kw=%E5%B2%B3%E6%AF%8D" class="theme14" target="_blank">岳母吧</a>
+        <a href="http://tieba.baidu.com/f?kw=%E5%BC%B1%E6%99%BA" class="theme12" target="_blank">弱智吧</a>
+        <a href="http://www.douban.com/group/haixiuzu/" class="theme6" target="_blank">害羞组</a>
+        <a href="/about" class="more" target="_blank">+ 我来推荐</a>
+      </div>
+    </div>
+  </div>
 
-            },function(){
-                animateSpan();
-
-            }).click(function(){
-                if($(this).hasClass('on')) return;
-
-                $('.nav-con h2').removeClass('on');
-                $(this).addClass('on');
-
-                $('.unit-content').fadeOut('fast');
-                $('.unit-content').css('display','none');
-
-                var index = $(this).index();
-
-                $('.unit-content').eq(index).fadeIn('fast',function(){
-                    $(this).removeClass('hide');
-                });
-
-            })
-
-            animateSpan();
-
-            $('body').delegate('.unit a', 'click', function(e){
-                var text = $(this).text();
-                mixpanel.track("SiteLink", {
-                    'text':text
-                });
-            })
-        });
-    </script>
-    <script type="text/javascript" src="http://js.tongji.linezing.com/3274846/tongji.js"></script><noscript><a href="http://www.linezing.com"><img src="http://img.tongji.linezing.com/3274846/tongji.gif"/></a></noscript>
+  <!-- start Mixpanel --><script type="text/javascript">(function(e,b){if(!b.__SV){var a,f,i,g;window.mixpanel=b;a=e.createElement("script");a.type="text/javascript";a.async=!0;a.src=("https:"===e.location.protocol?"https:":"http:")+'//cdn.mxpnl.com/libs/mixpanel-2.2.min.js';f=e.getElementsByTagName("script")[0];f.parentNode.insertBefore(a,f);b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.track_charge people.clear_charges people.delete_user".split(" ");for(g=0;g<i.length;g++)f(c,i[g]);b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);mixpanel.init("0f6abff9d6c4503520be364a85619665");</script><!-- end Mixpanel -->
+  <script type="text/javascript">
+    mixpanel.track_links(".unit a", "SiteLink", function(dom) {
+      var text = dom.innerHTML;
+      return {text:text}
+    });
+  </script>
+  <script type="text/javascript" src="http://js.tongji.linezing.com/3274846/tongji.js"></script><noscript><a href="http://www.linezing.com"><img src="http://img.tongji.linezing.com/3274846/tongji.gif"/></a></noscript>
 </body>
 </html>
