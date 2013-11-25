@@ -41,8 +41,7 @@ body {
   }
 
   a {
-    zoom: 1;
-    display: inline-block;
+    @include inline-block;
     background: rgba(255,255,255,0.8);
     margin: 20px 0 0 0;
     font-size: 20px;
