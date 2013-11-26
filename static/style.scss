@@ -39,12 +39,14 @@ body {
     /*@include flex-flow(row wrap);*/
     /*@include justify-content(space-between);*/
     text-align: justify;
-    font-size: 0.1px;
-  }
-  .unit-detail:after {
-    content: '';
-    width: 100%;
-    @include inline-block;
+    font-size: 0;
+    font-size: 0.1px\9;
+
+    &:after {
+      content: '';
+      width: 100%;
+      @include inline-block;
+    }
   }
 
   a {
