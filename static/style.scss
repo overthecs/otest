@@ -35,15 +35,22 @@ body {
   }
 
   .unit-detail {
-    @include display-flex;
-    @include flex-flow(row wrap);
-    @include justify-content(space-around);
+    /*@include display-flex;*/
+    /*@include flex-flow(row wrap);*/
+    /*@include justify-content(space-between);*/
+    text-align: justify;
+    font-size: 0.1px;
+  }
+  .unit-detail:after {
+    content: '';
+    width: 100%;
+    @include inline-block;
   }
 
   a {
     @include inline-block;
     background: rgba(255,255,255,0.8);
-    margin: 20px 0 0 0;
+    margin: 0 0 20px 0;
     font-size: 20px;
     width: 15%;
     height: 70px;
@@ -59,7 +66,6 @@ body {
     @media screen and (max-width:900px) {
       width: 18%;
       font-size: 18px;
-      margin: auto;
       margin-bottom: 20px;
       height: 60px;
       line-height: 60px;
@@ -68,7 +74,6 @@ body {
     @media screen and (max-width:750px) {
       width: 23%;
       font-size: 18px;
-      margin: auto;
       margin-bottom: 20px;
       height: 60px;
       line-height: 60px;
@@ -79,9 +84,12 @@ body {
       height: 50px;
       line-height: 50px;
       font-size: 14px;
-      margin: auto;
       margin-bottom: 10px;
     }
+  }
+  .placeholder {
+    padding: 0;
+    height: 0;
   }
 }
 

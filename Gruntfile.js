@@ -29,7 +29,8 @@ module.exports = function(grunt) {
     connect: {
       site1: {
         options: {
-          port: 9001
+          port: 9001,
+          hostname: '0.0.0.0'
           //Note that if this option is enabled, any tasks specified after this task will never run.
           //see there https://github.com/gruntjs/grunt-contrib-connect#keepalive
           //so use `grunt server:keepalive`
