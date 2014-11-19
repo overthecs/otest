@@ -15,7 +15,7 @@
   "readmeFilename": "README.md",
   "gitHead": "ad1642cbd887cac082d4d4f9e1ffbe0d481ebf0c",
   "dependencies": {
-    "grunt": "~0.4.2",
+    "grunt": "0.4.2",
     "grunt-contrib-compass": "~0.6.0",
     "grunt-contrib-watch": "~0.5.3",
     "grunt-contrib-connect": "~0.5.0"
